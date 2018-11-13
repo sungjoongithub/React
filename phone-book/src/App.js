@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import PhoneFrom from './components/PhoneFrom';
+import PhoneForm from './components/PhoneFrom';
 
 class App extends Component {
+  handleCreate = (data) => {
+    console.log(data);
+  }
   render() {
     return (
-        <div>  
-          <PhoneFrom/>
-       </div>
+      <div>
+        <PhoneForm 
+        onCreate={this.handleCreate}/>
+      </div>
     );
   }
 }
