@@ -22,7 +22,7 @@ class PhoneInfo extends Component {
         return (
             <div style={style}>
                 <div><b>{name}</b></div>
-                <div>{phone}</div>
+                <div>{phone}</div>.
             </div>
         );
     }
