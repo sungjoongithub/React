@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 class PhoneForm extends Component {
   state = {
     name: '',
-    phone: '',
-    address:''
+    phone: ''
   }
   handleChange = (e) => {
     this.setState({
@@ -20,7 +19,6 @@ class PhoneForm extends Component {
     this.setState({
       name: '',
       phone: '',
-      address:''
     })
   }
   render() {
@@ -39,13 +37,6 @@ class PhoneForm extends Component {
           name="phone"
         />
 
-        <input 
-            placeholder="주소"
-            value={this.state.address}
-            onChange={this.handleChange}
-            name="address"
-        
-        />
         <button type="submit">등록</button>
       </form>
     );
