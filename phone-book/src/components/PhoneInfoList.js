@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PhoneInfo from './PhoneInfo';
-sfs
+
 
 class PhoneInfoList extends Component {
     static defaultProps={
