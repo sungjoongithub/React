@@ -4,12 +4,13 @@ import PhoneInfo from './PhoneInfo';
 
 class PhoneInfoList extends Component {
     static defaultProps={
-        data:[]
+        list:[],
+        onRemove:()=>console.warn('Remove가 정의 되지 않았습니다.'),
     }
     render() {
-        const {data}=this.props;
+        const {data,onRemove}=this.props;
         const list=data.map(
-            info=>(<PhoneInfo key={info.id} info={info}/>)
+            info=>(<PhoneInfo key={info.id} info={info} onRemove={onRemove}/>)
         );
         return (
             <div>

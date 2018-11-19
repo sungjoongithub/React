@@ -8,6 +8,11 @@ class PhoneInfo extends Component {
             id:0
         }
     }
+    handleRemove=()=>{
+        //삭제버튼이 클릭되면 onRemove에 id 넣어서 호출
+        const {info,onRemove}=this.props;
+        onRemove(info.id);
+    }
     
     render() {
         const style={
