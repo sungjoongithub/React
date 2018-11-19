@@ -8,7 +8,12 @@ class PhoneInfoList extends Component {
         onRemove:()=>console.warn('Remove가 정의 되지 않았습니다.'),
         onUpdate:()=>console.warn('Update가 정의 되지않았습니다.')
     }
+
+    shouldComponentUpdate(nextProps,nextState){
+        return nextProps.data !==this.props.data;
+    }
     render() {
+        console.log('render PhoneInfoList');
         const {data,onRemove,onUpdate}=this.props;
         const list=data.map(
             info=>(<PhoneInfo 
