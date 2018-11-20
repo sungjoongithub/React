@@ -80,7 +80,7 @@ if(prevState.editing && !this.state.editing)   {
             margin:'8px'
         };
         const { editing}=this.state;
-        if(editing){//수정모드
+        if(editing){//수정모드.
             return(
             <div style={style}>
                 <div>
